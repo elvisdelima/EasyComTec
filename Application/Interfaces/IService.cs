@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using Domain;
 
-namespace Infrastructure.Interfaces
+namespace Application.Interfaces
 {
-    public interface IRepository<T> where T : Entity
+    public interface IService <T> where T : Entity
     {
         IEnumerable<T> Get();
         IEnumerable<T> Get(Expression<Func<T, bool>> predicate);

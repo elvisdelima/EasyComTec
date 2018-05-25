@@ -1,10 +1,9 @@
-﻿using System;
-namespace Domain
+﻿namespace Domain
 {
-    public class Customer
+    public class Customer : Entity
     {
-        public Customer()
-        {
-        }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public int PhoneNumber { get; set; }
     }
 }

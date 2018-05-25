@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using Domain;
 using Infrastructure.Interfaces;
 
-namespace Infrastructure.Data
+namespace Infrastructure.Data.Repositories
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : Entity
     {
         private readonly IUnitOfWork _unitOfWork;
-        public Repository(IUnitOfWork unitOfWork)
+
+        protected Repository(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
@@ -19,16 +21,16 @@ namespace Infrastructure.Data
 
         public void Delete(T entity)
         {
-            T existing = _unitOfWork.Context.Set<T>().Find(entity);
+            var existing = _unitOfWork.Context.Set<T>().Find(entity);
             if (existing != null) _unitOfWork.Context.Set<T>().Remove(existing);
         }
 
-        public IEnumerable<T> Get() => _unitOfWork.Context.Set<T>().AsEnumerable<T>();
+        public IEnumerable<T> Get() => _unitOfWork.Context.Set<T>().AsEnumerable();
 
 
         public IEnumerable<T> Get(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
         {
-            return _unitOfWork.Context.Set<T>().Where(predicate).AsEnumerable<T>();
+            return _unitOfWork.Context.Set<T>().Where(predicate).AsEnumerable();
         }
 
         public void Update(T entity)

@@ -1,17 +1,17 @@
-﻿using System;
-using System.Runtime.Remoting.Contexts;
-using EasyComTec.Infrastructure.Interfaces;
+﻿using System.Data.Entity;
+using Infrastructure.Interfaces;
 
-namespace EasyComTec.Infrastructure
+namespace Infrastructure
 {
     public class UnitOfWork : IUnitOfWork
     {
-        public Context Context { get; }
+        public DbContext Context { get; }
 
-        public UnitOfWork(Context context)
+        public UnitOfWork(DbContext context)
         {
             Context = context;
         }
+
         public void Commit()
         {
             Context.SaveChanges();

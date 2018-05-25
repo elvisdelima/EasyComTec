@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Runtime.Remoting.Contexts;
+using System.Data.Entity;
 
-namespace EasyComTec.Infrastructure.Interfaces
+namespace Infrastructure.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        Context Context { get; }
+        DbContext Context { get; }
         void Commit();
     }
 }
