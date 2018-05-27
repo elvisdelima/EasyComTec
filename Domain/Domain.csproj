@@ -2,4 +2,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="DTO\Customer" />
+    <Folder Include="Models\ValueObjects" />
+  </ItemGroup>
 </Project>
