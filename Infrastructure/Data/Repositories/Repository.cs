@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using Domain;
 using Infrastructure.Interfaces;
 
@@ -18,17 +19,17 @@ namespace Infrastructure.Data.Repositories
 
         public void Add(T entity) => _unitOfWork.Context.Set<T>().Add(entity);
 
-
         public void Delete(T entity)
         {
             var existing = _unitOfWork.Context.Set<T>().Find(entity);
             if (existing != null) _unitOfWork.Context.Set<T>().Remove(existing);
         }
 
+        public T Get(Guid id) => _unitOfWork.Context.Set<T>().FirstOrDefault(e => e.Id == id);
+
         public IEnumerable<T> Get() => _unitOfWork.Context.Set<T>().AsEnumerable();
 
-
-        public IEnumerable<T> Get(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
+        public IEnumerable<T> Get(Expression<Func<T, bool>> predicate)
         {
             return _unitOfWork.Context.Set<T>().Where(predicate).AsEnumerable();
         }

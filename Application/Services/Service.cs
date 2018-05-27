@@ -20,6 +20,8 @@ namespace Application.Services
 
         public IEnumerable<T> Get(Expression<Func<T, bool>> predicate) => Repository.Get(predicate);
 
+        public T Get(Guid id) => Repository.Get(id);
+        
         public void Add(T entity) => Repository.Add(entity);
 
         public void Delete(T entity) => Repository.Delete(entity);

@@ -7,6 +7,7 @@ namespace Application.Interfaces
 {
     public interface IService <T> where T : Entity
     {
+        T Get(Guid id);
         IEnumerable<T> Get();
         IEnumerable<T> Get(Expression<Func<T, bool>> predicate);
         void Add(T entity);
