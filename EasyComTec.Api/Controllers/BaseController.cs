@@ -19,13 +19,7 @@ namespace Api.Controllers
         }
 
         public virtual IActionResult Get<TSource, TDestination>(Guid id)
-        {
-            var item = _service.Get(id);
-            var destination = AppMapper.Instance.Map<TEntity, TDestination>(item);
-            return Ok(
-                new List<TDestination> { destination } 
-            );
-        }
+            => Ok(new List<TDestination> { AppMapper.Instance.Map<TEntity, TDestination>(_service.Get(id))});    
             
         public virtual IActionResult GetAll<TSource, TDestination>() 
             => Ok(AppMapper.Instance.Map<List<TSource>, List<TDestination>>(_service.Get() as List<TSource>));
@@ -43,7 +37,7 @@ namespace Api.Controllers
             var entityUpdated = _service.Update(AppMapper.Instance.Map<TSource, TEntity>(source));
             var entityResponse = AppMapper.Instance.Map<TEntity, TDestination>(entityUpdated);
 
-            return new OkObjectResult(entityResponse);
+            return Ok(entityResponse);
         }
 
         public virtual IActionResult Delete(Guid id)

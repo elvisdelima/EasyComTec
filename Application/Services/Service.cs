@@ -15,17 +15,11 @@ namespace Application.Services
         }
 
         private IRepository<T> Repository { get;  }
-        
         public IEnumerable<T> Get() => Repository.Get();
-
         public IEnumerable<T> Get(Expression<Func<T, bool>> predicate) => Repository.Get(predicate);
-
         public T Get(Guid id) => Repository.Get(id);
-        
-        public void Add(T entity) => Repository.Add(entity);
-
-        public void Delete(T entity) => Repository.Delete(entity);
-
-        public void Update(T entity) => Repository.Update(entity);
+        public T Add(T entity) => Repository.Add(entity);
+        public T Update(T entity) => Repository.Update(entity);
+        public void Delete(Guid id) => Repository.Delete(id);
     }
 }

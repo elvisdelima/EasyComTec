@@ -17,27 +17,26 @@ namespace Infrastructure.Data.Repositories
             _unitOfWork = unitOfWork;
         }
 
-        public void Add(T entity) => _unitOfWork.Context.Set<T>().Add(entity);
-
-        public void Delete(T entity)
-        {
-            var existing = _unitOfWork.Context.Set<T>().Find(entity);
-            if (existing != null) _unitOfWork.Context.Set<T>().Remove(existing);
-        }
-
+        public T Add(T entity) => _unitOfWork.Context.Set<T>().Add(entity);
+       
         public T Get(Guid id) => _unitOfWork.Context.Set<T>().FirstOrDefault(e => e.Id == id);
 
         public IEnumerable<T> Get() => _unitOfWork.Context.Set<T>().AsEnumerable();
 
         public IEnumerable<T> Get(Expression<Func<T, bool>> predicate)
-        {
-            return _unitOfWork.Context.Set<T>().Where(predicate).AsEnumerable();
-        }
-
-        public void Update(T entity)
+            => _unitOfWork.Context.Set<T>().Where(predicate).AsEnumerable();
+        
+        public T Update(T entity)
         {
             _unitOfWork.Context.Entry(entity).State = EntityState.Modified;
-            _unitOfWork.Context.Set<T>().Attach(entity);
+            return _unitOfWork.Context.Set<T>().Attach(entity);    
         }
+        
+        public void Delete(Guid id)
+        {
+            var existing = _unitOfWork.Context.Set<T>().FirstOrDefault(e => e.Id == id);
+            if (existing != null) _unitOfWork.Context.Set<T>().Remove(existing);
+        }
+
     }
 }

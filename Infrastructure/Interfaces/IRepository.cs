@@ -10,8 +10,8 @@ namespace Infrastructure.Interfaces
         T Get(Guid id);
         IEnumerable<T> Get();
         IEnumerable<T> Get(Expression<Func<T, bool>> predicate);
-        void Add(T entity);
-        void Delete(T entity);
-        void Update(T entity);
+        T Add(T entity);
+        T Update(T entity);
+        void Delete(Guid id);
     }
 }
