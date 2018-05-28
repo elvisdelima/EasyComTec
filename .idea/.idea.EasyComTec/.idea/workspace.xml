@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed704016-8c69-4c4b-b351-18c1e33a2442" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Application/Interfaces/IService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/IService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Services/Service.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Services/Service.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EasyComTec/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EasyComTec/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EasyComTec/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EasyComTec/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Domain.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EasyComTec.Api/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyComTec.Api/Controllers/BaseController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/Repositories/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Data/Repositories/Repository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Interfaces/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Interfaces/IRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyComTec.Api/Controllers/CustomerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyComTec.Api/Controllers/CustomerController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +33,106 @@
     <favorites_list name="EasyComTec" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="CustomerController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EasyComTec.Api/Controllers/CustomerController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+              <folding>
+                <marker date="1527551331000" expanded="true" signature="6:116" ph="..." />
+                <marker date="1527551331000" expanded="true" signature="143:1087" ph="{...}" />
+                <marker date="1527551331000" expanded="true" signature="226:1085" ph="{...}" />
+                <marker date="1527551331000" expanded="true" signature="336:348" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EasyComTec.Api/Controllers/BaseController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+              <folding>
+                <marker date="1527551240000" expanded="false" signature="6:177" ph="..." />
+                <marker date="1527551240000" expanded="true" signature="204:1765" ph="{...}" />
+                <marker date="1527551240000" expanded="true" signature="344:1763" ph="{...}" />
+                <marker date="1527551240000" expanded="true" signature="443:495" ph="{...}" />
+                <marker date="1527551240000" expanded="true" signature="975:1245" ph="{...}" />
+                <marker date="1527551240000" expanded="true" signature="1359:1613" ph="{...}" />
+                <marker date="1527551240000" expanded="true" signature="1662:1757" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerDto.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Domain/DTO/Customer/CustomerDto.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+              <folding>
+                <marker date="1527549228000" expanded="true" signature="44:254" ph="{...}" />
+                <marker date="1527549228000" expanded="true" signature="75:252" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateCustomerDto.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Domain/DTO/Customer/CreateCustomerDto.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <marker date="1527548899000" expanded="true" signature="75:292" ph="{...}" />
+                <marker date="1527548899000" expanded="true" signature="112:290" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateCustomerDto.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Domain/DTO/Customer/UpdateCustomerDto.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <folding>
+                <marker date="1527549195000" expanded="true" signature="29:125" ph="{...}" />
+                <marker date="1527549195000" expanded="true" signature="66:123" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Domain/Models/Entities/Entity.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+              <folding>
+                <marker date="1527335024000" expanded="true" signature="31:204" ph="{...}" />
+                <marker date="1527335024000" expanded="true" signature="57:202" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Customer.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Domain/Models/Entities/Customer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <marker date="1527335024000" expanded="true" signature="16:195" ph="{...}" />
+                <marker date="1527335024000" expanded="true" signature="53:193" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,8 +154,11 @@
     <setting file="file://$PROJECT_DIR$/EasyComTec.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Data/DatabaseContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Data/Repositories/Repository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/DTO/Customer/CustomerDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Interfaces/IUnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/DTO/Customer/CreateCustomerDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Interfaces/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/DTO/Customer/UpdateCustomerDto.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -72,13 +174,17 @@
         <option value="$PROJECT_DIR$/Application/Services/CustomerService.cs" />
         <option value="$PROJECT_DIR$/EasyComTec.Api/Controllers/ValuesController.cs" />
         <option value="$PROJECT_DIR$/Domain/Customer.cs" />
-        <option value="$PROJECT_DIR$/EasyComTec.Api/Controllers/CustomerController.cs" />
         <option value="$PROJECT_DIR$/Infrastructure/CrossCutting/AppMapper.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/IService.cs" />
         <option value="$PROJECT_DIR$/Infrastructure/Interfaces/IRepository.cs" />
         <option value="$PROJECT_DIR$/Application/Services/Service.cs" />
-        <option value="$PROJECT_DIR$/EasyComTec.Api/Controllers/BaseController.cs" />
         <option value="$PROJECT_DIR$/Infrastructure/Data/Repositories/Repository.cs" />
+        <option value="$PROJECT_DIR$/Domain/DTO/Customer/CreateCustomerDto.cs" />
+        <option value="$PROJECT_DIR$/Domain/Models/Entities/Entity.cs" />
+        <option value="$PROJECT_DIR$/Domain/DTO/Customer/UpdateCustomerDto.cs" />
+        <option value="$PROJECT_DIR$/Domain/DTO/Customer/CustomerDto.cs" />
+        <option value="$PROJECT_DIR$/EasyComTec.Api/Controllers/BaseController.cs" />
+        <option value="$PROJECT_DIR$/EasyComTec.Api/Controllers/CustomerController.cs" />
       </list>
     </option>
   </component>
@@ -135,18 +241,6 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="EasyComTec (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Application" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Interfaces" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="EasyComTec (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Application" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Services" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="EasyComTec (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Domain" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
@@ -158,6 +252,26 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="EasyComTec (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Domain" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="DTO" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Customer" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyComTec (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Domain" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Models" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyComTec (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Domain" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Models" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Entities" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyComTec (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Infrastructure" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
@@ -165,25 +279,6 @@
               <item name="EasyComTec (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Infrastructure" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="CrossCutting" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="EasyComTec (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Infrastructure" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Data" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="EasyComTec (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Infrastructure" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Data" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Repositories" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="EasyComTec (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Infrastructure" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Interfaces" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -236,12 +331,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527265349466</updated>
-      <workItem from="1527265352700" duration="14153000" />
+      <workItem from="1527265352700" duration="17286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14153000" />
+    <option name="totallyTimeSpent" value="17286000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -254,6 +349,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="972" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" weight="0.32967034" />
@@ -382,17 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/Models/Entities/Entity.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <marker date="1527335024000" expanded="true" signature="31:204" ph="{...}" />
-            <marker date="1527335024000" expanded="true" signature="57:202" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Infrastructure/Data/DatabaseContext.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -429,17 +514,6 @@
             <marker date="1527287780000" expanded="true" signature="567:587" ph="{...}" />
             <marker date="1527287780000" expanded="true" signature="698:718" ph="{...}" />
             <marker date="1527287780000" expanded="true" signature="814:834" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/Models/Entities/Customer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <marker date="1527335024000" expanded="true" signature="16:195" ph="{...}" />
-            <marker date="1527335024000" expanded="true" signature="53:193" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -511,33 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EasyComTec.Api/Controllers/BaseController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-          <folding>
-            <marker date="1527525187000" expanded="true" signature="6:158" ph="..." />
-            <marker date="1527525187000" expanded="true" signature="185:1778" ph="{...}" />
-            <marker date="1527525187000" expanded="true" signature="325:1776" ph="{...}" />
-            <marker date="1527525187000" expanded="true" signature="424:476" ph="{...}" />
-            <marker date="1527525187000" expanded="true" signature="978:1248" ph="{...}" />
-            <marker date="1527525187000" expanded="true" signature="1367:1621" ph="{...}" />
-            <marker date="1527525187000" expanded="true" signature="1675:1770" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EasyComTec.Api/Controllers/CustomerController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding>
-            <marker date="1527427747000" expanded="true" signature="58:129" ph="{...}" />
-            <marker date="1527427747000" expanded="true" signature="109:127" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Services/Service.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -560,6 +607,90 @@
             <marker date="1527287428000" expanded="true" signature="108:302" ph="{...}" />
             <marker date="1527287428000" expanded="true" signature="181:300" ph="{...}" />
             <marker date="1527287428000" expanded="true" signature="271:294" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyComTec.Api/Controllers/CustomerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <folding>
+            <marker date="1527551331000" expanded="true" signature="6:116" ph="..." />
+            <marker date="1527551331000" expanded="true" signature="143:1087" ph="{...}" />
+            <marker date="1527551331000" expanded="true" signature="226:1085" ph="{...}" />
+            <marker date="1527551331000" expanded="true" signature="336:348" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyComTec.Api/Controllers/BaseController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+          <folding>
+            <marker date="1527551240000" expanded="false" signature="6:177" ph="..." />
+            <marker date="1527551240000" expanded="true" signature="204:1765" ph="{...}" />
+            <marker date="1527551240000" expanded="true" signature="344:1763" ph="{...}" />
+            <marker date="1527551240000" expanded="true" signature="443:495" ph="{...}" />
+            <marker date="1527551240000" expanded="true" signature="975:1245" ph="{...}" />
+            <marker date="1527551240000" expanded="true" signature="1359:1613" ph="{...}" />
+            <marker date="1527551240000" expanded="true" signature="1662:1757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/DTO/Customer/CustomerDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <marker date="1527549228000" expanded="true" signature="44:254" ph="{...}" />
+            <marker date="1527549228000" expanded="true" signature="75:252" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/DTO/Customer/CreateCustomerDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <marker date="1527548899000" expanded="true" signature="75:292" ph="{...}" />
+            <marker date="1527548899000" expanded="true" signature="112:290" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/DTO/Customer/UpdateCustomerDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <marker date="1527549195000" expanded="true" signature="29:125" ph="{...}" />
+            <marker date="1527549195000" expanded="true" signature="66:123" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/Models/Entities/Entity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding>
+            <marker date="1527335024000" expanded="true" signature="31:204" ph="{...}" />
+            <marker date="1527335024000" expanded="true" signature="57:202" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/Models/Entities/Customer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <marker date="1527335024000" expanded="true" signature="16:195" ph="{...}" />
+            <marker date="1527335024000" expanded="true" signature="53:193" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Application.Interfaces;
 using Domain;
 using Infrastructure.CrossCutting;
@@ -18,13 +19,14 @@ namespace Api.Controllers
             _service = service;
         }
 
-        public virtual IActionResult Get<TSource, TDestination>(Guid id)
+        protected IActionResult Get<TDestination>(Guid id)
             => Ok(new List<TDestination> { AppMapper.Instance.Map<TEntity, TDestination>(_service.Get(id))});    
             
-        public virtual IActionResult GetAll<TSource, TDestination>() 
-            => Ok(AppMapper.Instance.Map<List<TSource>, List<TDestination>>(_service.Get() as List<TSource>));
+        protected IActionResult GetAll<TDestination>() 
+            => Ok(AppMapper.Instance.Map<List<TEntity>, List<TDestination>>(_service.Get().ToList()));
 
-        public virtual IActionResult Post<TSource, TDestination>([FromBody]TSource source) where TDestination : Entity
+        [HttpPost]
+        protected IActionResult Post<TSource, TDestination>([FromBody]TSource source) where TDestination : Entity
         {
             var entityCreated = _service.Add(AppMapper.Instance.Map<TSource, TEntity>(source));
             var entityResponse = AppMapper.Instance.Map<TEntity, TDestination>(entityCreated);
@@ -32,7 +34,7 @@ namespace Api.Controllers
             return new CreatedResult("", entityResponse);
         }
 
-        public virtual IActionResult Put<TSource, TDestination>([FromBody]TSource source) where TDestination : Entity
+        protected IActionResult Put<TSource, TDestination>([FromBody]TSource source) where TDestination : Entity
         {
             var entityUpdated = _service.Update(AppMapper.Instance.Map<TSource, TEntity>(source));
             var entityResponse = AppMapper.Instance.Map<TEntity, TDestination>(entityUpdated);
@@ -40,7 +42,7 @@ namespace Api.Controllers
             return Ok(entityResponse);
         }
 
-        public virtual IActionResult Delete(Guid id)
+        protected IActionResult Delete(Guid id)
         {
             _service.Delete(id);
             return new NoContentResult();
