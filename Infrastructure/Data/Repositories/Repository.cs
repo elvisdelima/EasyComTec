@@ -17,7 +17,7 @@ namespace Infrastructure.Data.Repositories
             _unitOfWork = unitOfWork;
         }
 
-        public T Add(T entity) => _unitOfWork.Context.Set<T>().Add(entity);
+        public T Add(T entity) => _unitOfWork.Context.Set<T>().Add(entity).Entity;
        
         public T Get(Guid id) => _unitOfWork.Context.Set<T>().FirstOrDefault(e => e.Id == id);
 
@@ -28,8 +28,8 @@ namespace Infrastructure.Data.Repositories
         
         public T Update(T entity)
         {
-            _unitOfWork.Context.Entry(entity).State = EntityState.Modified;
-            return _unitOfWork.Context.Set<T>().Attach(entity);    
+            //_unitOfWork.Context.Entry(entity).State = EntityState.Modified;
+            return _unitOfWork.Context.Set<T>().Attach(entity).Entity;    
         }
         
         public void Delete(Guid id)

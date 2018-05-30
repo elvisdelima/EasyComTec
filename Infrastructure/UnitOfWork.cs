@@ -1,13 +1,14 @@
 ﻿using System.Data.Entity;
+using Infrastructure.Data;
 using Infrastructure.Interfaces;
 
 namespace Infrastructure
 {
     public class UnitOfWork : IUnitOfWork
     {
-        public DbContext Context { get; }
+        public DatabaseContext Context { get; }
 
-        public UnitOfWork(DbContext context)
+        public UnitOfWork(DatabaseContext context)
         {
             Context = context;
         }

@@ -6,7 +6,7 @@ namespace Application.Services
 {
     public class CustomerService : Service<Customer>, ICustomerService
     {
-        public CustomerService(IRepository<Customer> repository) : base(repository)
+        public CustomerService(ICustomerRepository repository) : base(repository)
         {   
         }
     }

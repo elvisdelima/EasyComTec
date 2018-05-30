@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Data.Entity;
+using Infrastructure.Data;
 
 namespace Infrastructure.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        DbContext Context { get; }
+        DatabaseContext Context { get; }
         void Commit();
     }
 }
