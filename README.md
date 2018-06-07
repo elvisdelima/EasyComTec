@@ -1,2 +1,2 @@
 # EasyComTec
-EasyComTec CRUD Project
+EasyComTec DDD Project
